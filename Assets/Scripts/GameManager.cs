@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
         if (projectileSpeedIncreseAt.Contains(score))
             increaseObstacleSpeed(_projectiles, 5.0f);
 
-        if (score == movingWallStartLevel && score % activateWallEvery == 0)
+        if (score >= movingWallStartLevel && score % activateWallEvery == 0)
             activateObstacles(_movingWalls, 1);
 
         if (movingWallSpeedIncreseAt.Contains(score))
